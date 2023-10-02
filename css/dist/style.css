@@ -79,6 +79,7 @@ body header img, body .hero-section img, body .courses-section img, body footer 
 body header nav, body .hero-section nav, body .courses-section nav, body footer nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 1rem auto 0;
 }
 body header nav a, body .hero-section nav a, body .courses-section nav a, body footer nav a {
   color: #000;
@@ -168,4 +169,80 @@ body footer .newsletter-form label {
 body footer .newsletter-form input {
   border: 2px solid #000;
   box-shadow: 4px 4px 0 #000;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 40rem) {
+    
+  header nav {
+      display: block;
+      text-align: center;
+  }
+
+
+  .cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .card:nth-child(2n) {
+      margin-top: 1rem;
+  }
+}
+
+@media  screen and (min-width: 48rem) {
+
+  header div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  header img, header nav, header .button {
+      margin: 0;
+  }
+}
+
+@media screen and (min-width:72rem) {
+  
+  h1, h2 {
+    font-size: 4rem;
+  }
+
+  .container {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 72rem;
+  }
+
+  .container.row-reverse{
+      flex-direction: row-reverse;
+  }
+
+  .about-column {
+      flex: 2;
+  }
+
+  .about-column p {
+      font-size: 1.25rem;
+      max-width: 16rem;
+  }
+
+  footer nav {
+      flex: 1;
+  }
+
+  .newsletter-form {
+      flex: 3;
+  }
+}
+
+@media screen and (min-witdh: 90rem) {
+  .container  {
+    max-width:80rem;
+  }
 }

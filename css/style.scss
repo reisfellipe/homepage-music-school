@@ -93,6 +93,7 @@ body {
         nav {
             display: grid;
             grid-template-columns: 1fr 1fr; 
+            margin: 1rem auto 0;
 
             a{
                 color: $color-black;
@@ -202,6 +203,9 @@ body {
         .newsletter-form input {
             border: 2px solid $color-black;
             box-shadow: 4px 4px 0 $color-black;
+            font-size: 1.5rem;
+            padding: .5rem;
+            width: 100%;
         }
     }
 
