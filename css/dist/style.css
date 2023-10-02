@@ -121,3 +121,51 @@ body .hero-section .button::after {
 body h2 {
   font-size: 2.5rem;
 }
+body .courses-section {
+  padding-bottom: 8rem;
+}
+body .courses-section .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+  margin-top: -8rem;
+  margin-bottom: 4rem;
+}
+body .courses-section .cards .card {
+  background-color: #ED4D1B;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  max-width: 17rem;
+  padding: 2rem 0 0 2rem;
+}
+body .courses-section .cards .card:nth-child(2n) {
+  align-self: end;
+  background-color: #FF9A3c;
+}
+body .courses-section .cards .card strong {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+body .courses-section .cards .card a {
+  display: block;
+  margin: 3rem 0 0 auto;
+  width: fit-content;
+}
+body footer {
+  border-bottom: 0;
+  padding: 1rem 1.25rem 4rem;
+}
+body footer nav a {
+  display: block;
+  padding-left: 0;
+}
+body footer .newsletter-form label {
+  display: block;
+  font-size: 1.5rem;
+}
+body footer .newsletter-form input {
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #000;
+}
