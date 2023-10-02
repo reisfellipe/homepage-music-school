@@ -181,11 +181,12 @@ body footer .newsletter-form input {
       text-align: center;
   }
 
-
   .cards {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      max-width: 70%;
+      margin: auto;
   }
 
   .card:nth-child(2n) {
@@ -195,14 +196,20 @@ body footer .newsletter-form input {
 
 @media  screen and (min-width: 48rem) {
 
-  header div {
+  header .menu {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      width:100vw;
+  }
+
+  header .menu nav {
+    display: block;
+    align-items: center;
   }
 
   header img, header nav, header .button {
-      margin: 0;
+      margin: 0 10px;
   }
 }
 
@@ -229,7 +236,7 @@ body footer .newsletter-form input {
 
   .about-column p {
       font-size: 1.25rem;
-      max-width: 16rem;
+      max-width: 20rem;
   }
 
   footer nav {
