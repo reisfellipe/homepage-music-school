@@ -1,3 +1,98 @@
-h1 {
-    color: orange;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+//variables
+:root {
+    $color-primary:#ED4D1B !global;
+    $color-secondary: #FF9A3c !global;
+    $color-black:#000 !global;
+    $color-white: #FFF !global;
+}
+
+//settings through classes
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primary {
+    color: $color-primary;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    background-color: $color-primary;
+    border: 2px solid $color-black;
+    box-shadow: 4px 4px 0 $color-black;
+    display: block;
+    font-size: 1.25rem;
+    color: $color-black;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+//site
+
+body {
+    background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E6 100%);
+    padding: 0 1rem;
+
+    header, .hero-section, .courses-section, footer {
+        border-color: $color-black;
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        padding: 1.25rem;
+
+        img {
+            display: block;
+            margin: 1rem auto;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+
+            a{
+                color: $color-black;
+                font-size: 1.25em;
+                padding: .5rem;
+                text-decoration: none;
+
+                &:nth-child(2n-1){
+                    text-align: right;
+                }
+            }
+
+        }
+    }
+
+}
+
