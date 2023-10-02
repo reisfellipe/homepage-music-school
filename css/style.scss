@@ -59,6 +59,20 @@
     font-weight: bold;
 }
 
+.decoration {
+    display: block;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url('/img/three-dashes.svg');
+        position: absolute;
+        height: 36px;
+        width: 40px;
+        top: -0.75rem;
+    }
+}
+
 //site
 
 body {
@@ -94,5 +108,43 @@ body {
         }
     }
 
+    .hero-section {
+        padding-right: 0;
+        padding-bottom: 16rem;
+
+        img {
+            display: block;
+            margin: 1.25rem 0 0 auto;
+            max-width: 100%;
+        }
+
+        h1{
+            font-size: 3rem;
+            line-height: 105%;
+        }
+        p{
+            font-size: 1.25em;
+            padding-right: 1.25rem;
+        }
+
+        .button{
+            position: relative;
+
+            &::after {
+                content: '';
+                background-image: url("/img/arrow-curve.svg");
+                position: absolute;
+                height: 48px;
+                width: 132px;
+                top: 5rem;
+                right: -6rem;
+            }
+        }
+         
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
 }
 
